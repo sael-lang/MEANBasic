@@ -1,0 +1,24 @@
+<table class="table" style="color: white;">
+    <thead>
+        <tr>
+            <th scope="col">president</th>
+            <th scope="col">VP</th>
+            <th scope="col">secertary</th>
+            <th scope="col">general secertary</th>
+            <th scope="col">team head</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of edata">
+            <td>{{row.username}}</td>
+            <td>{{row.fname}}</td>
+            <td>{{row.lname}}</td>
+            <td>{{row.society}}</td>
+            <td>{{row.password}}</td>
+            <td>
+            
+            </td>
+        </tr>
+    </tbody>
+  </table>
+  <button (click)="getuser()" >refresh</button>

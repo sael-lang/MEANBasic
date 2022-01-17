@@ -1,0 +1,31 @@
+
+  
+  .topnav {
+    overflow: hidden;
+    position: fixed;
+    background-color: black;
+  }
+  
+  .topnav a {
+    float:left;
+    display: flex;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+  
+    color: rgb(194, 82, 55);
+    cursor:pointer;
+  }
+  
+  .topnav a.active {
+    cursor:pointer;
+    color: white;
+  }
+
+ 
+  

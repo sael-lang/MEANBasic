@@ -1,0 +1,96 @@
+{
+  "posts": [
+    {
+      "username": "aas",
+      "fname": "ali",
+      "lname": "amad",
+      "society": "as",
+      "password": "asd",
+      "id": 6
+    },
+    {
+      "username": "aas",
+      "fname": "ali",
+      "lname": "amad",
+      "society": "as",
+      "password": "asd",
+      "id": 7
+    },
+    {
+      "username": "ali2",
+      "fname": "ali2",
+      "lname": "ali2",
+      "society": "ali2",
+      "password": "asd",
+      "id": 9
+    },
+    {
+      "username": "xyz",
+      "fname": "asd",
+      "lname": "xyz",
+      "society": "asd",
+      "password": "123",
+      "id": 10
+    },
+    {
+      "username": "asd",
+      "fname": "asd",
+      "lname": "asd",
+      "society": "asd",
+      "password": "asd",
+      "id": 11
+    },
+    {
+      "username": "aas",
+      "fname": "ali",
+      "lname": "amad",
+      "society": "as",
+      "password": "fjsdiogjsio",
+      "id": {
+        "username": "aas",
+        "fname": "ali",
+        "lname": "amad",
+        "society": "as",
+        "password": "asd",
+        "id": 7
+      }
+    },
+    {
+      "username": "ijazahmad",
+      "fname": "ijaz",
+      "lname": "ahmad",
+      "society": "cultural",
+      "password": "asd",
+      "id": 12
+    },
+    {
+      "username": null,
+      "fname": null,
+      "lname": null,
+      "society": null,
+      "password": null,
+      "id": 13
+    },
+    {
+      "username": "ahmad",
+      "fname": "ahmad",
+      "lname": "ahmad",
+      "society": "ahmad",
+      "password": "ahmad",
+      "id": 14
+    },
+    {
+      "username": "123",
+      "fname": "123",
+      "lname": "123",
+      "society": "123",
+      "password": "123",
+      "id": 15
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  },
+  "hope": []
+}

@@ -1,0 +1,78 @@
+<nav style="margin-top: 100px;" class="navber navbar-light bg-primary">
+    <div style="background-color: grey;" class="container-fluid">
+        <h1 style="color: ivory;">Admin panel</h1>
+        <div class="flex">
+            <button style="margin: 0% 1500px;" (click)="click()" type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                Add
+              </button>
+        </div>
+    </div>
+</nav>
+<table class="table" style="color: white;">
+    <thead>
+        <tr>
+            <th scope="col">Username</th>
+            <th scope="col">first name</th>
+            <th scope="col">last name</th>
+            <th scope="col">society</th>
+            <th scope="col">password</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of edata">
+            <td>{{row.username}}</td>
+            <td>{{row.fname}}</td>
+            <td>{{row.lname}}</td>
+            <td>{{row.society}}</td>
+            <td>{{row.password}}</td>
+            <td>
+                <button  (click)="onedit(row)" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-info">Edit</button>
+                <button (click)="deluser(row.id)" class="btn btn-danger mx-3">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel2">details</h5>
+          <button type="button" class="bt-close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="formvalue">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Username</label>
+                  <input type="text" formControlName="username" class="form-control"   placeholder="Enter Username">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">first name</label>
+                    <input type="text" formControlName="fname" class="form-control"   placeholder="Enter first name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Last name</label>
+                    <input type="text" formControlName="lname" class="form-control"  placeholder="Enter last name">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">society</label>
+                    <input type="text" formControlName="society" class="form-control"  placeholder="Enter society">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Password</label>
+                    <input type="password" formControlName="password" class="form-control"  placeholder="Enter Password">
+                  </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" (click)="postuser()" class="btn btn-primary">Add</button>
+          <button type="button" (click)="upduser()" class="btn btn-primary">update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
